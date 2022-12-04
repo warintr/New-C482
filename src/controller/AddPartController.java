@@ -126,7 +126,7 @@ public class AddPartController implements Initializable {
         int newPartMachineId;
         String newPartCompanyName;
 
-        //Checks if name is valid
+        //Checks if name is valid - Displays alert if not valid
         if (newPartName.equals("") || newPartName == null){
             Alert addPartNameAlert = new Alert(Alert.AlertType.ERROR);
             addPartNameAlert.setHeaderText("Part Name is a required field.");
@@ -134,7 +134,7 @@ public class AddPartController implements Initializable {
             return;
         }
 
-        //Checks if inventory level, min, and max has valid integers
+        //Checks if inventory level, min, and max has valid integers - displays alert if no valid integers
         try{
             newPartInventory = Integer.parseInt(addPartInventory.getText());
             newPartMax = Integer.parseInt(addPartMax.getText());
@@ -146,7 +146,7 @@ public class AddPartController implements Initializable {
             return;
         }
 
-        //Checks if price field has valid double
+        //Checks if price field has valid double - displays alert if not a valid number
         try{
             newPartPrice = Double.parseDouble(addPartPrice.getText());
         }   catch(NumberFormatException e){
@@ -165,7 +165,7 @@ public class AddPartController implements Initializable {
             return;
         }
 
-        //Checks if inventory min is less than inventory max
+        //Checks if inventory min is less than inventory max - displays error if Min is larger than Max
         if(newPartMin > newPartMax){
             Alert minMaxAlert = new Alert(Alert.AlertType.ERROR);
             minMaxAlert.setTitle("Error");
@@ -174,7 +174,8 @@ public class AddPartController implements Initializable {
             return;
         }
 
-        //Radio button options for creating in-house or outsourced part
+        //Radio button options for creating in-house or outsourced part - checks for a valid integer in Machine ID field if In-House selected and displays alert if no valid integer.
+        //Checks for a valid input for Company Name when Outsourced selected.  - Alerts if no valid input.
         if(addInHouse.isSelected()){
             try{
                 newPartMachineId = Integer.parseInt(addPartMachineId.getText());

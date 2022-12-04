@@ -7,7 +7,7 @@
 <?import javafx.scene.text.*?>
 
 <AnchorPane fx:id="InventoryManagementSystem" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0"
-            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="controller.InventoryManagerController">
     <children>
         <Button fx:id="exitButton" layoutX="954.0" layoutY="317.0" mnemonicParsing="false" onAction="#exitProgram"
