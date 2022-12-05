@@ -23,7 +23,7 @@
                     <children>
                         <Label text="ID" />
                         <Label text="Name" GridPane.rowIndex="1" />
-                        <TextField fx:id="modifyProductId" promptText="Auto Gen- Disabled" GridPane.columnIndex="1" />
+                        <TextField fx:id="modifyProductId" disable="true" editable="false" promptText="Auto Gen- Disabled" GridPane.columnIndex="1" />
                         <TextField fx:id="modifyProductName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                     </children>
                 </GridPane>

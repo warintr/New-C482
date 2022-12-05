@@ -45,7 +45,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
-                        <TextField fx:id="addPartId" editable="false" promptText="Auto Gen- Disabled" GridPane.columnIndex="1" />
+                        <TextField fx:id="addPartId" disable="true" editable="false" promptText="Auto Gen- Disabled" GridPane.columnIndex="1" />
                         <TextField fx:id="addPartName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                         <TextField fx:id="addPartInventory" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                         <TextField fx:id="addPartPrice" GridPane.columnIndex="1" GridPane.rowIndex="3" />

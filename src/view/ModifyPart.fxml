@@ -45,7 +45,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
-                        <TextField fx:id="modPartId" editable="false" GridPane.columnIndex="1" />
+                        <TextField fx:id="modPartId" disable="true" editable="false" GridPane.columnIndex="1" />
                         <TextField fx:id="modPartName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                         <TextField fx:id="modPartInventory" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                         <TextField fx:id="modPartPrice" GridPane.columnIndex="1" GridPane.rowIndex="3" />
